@@ -77,7 +77,7 @@ fn dummy_const_trick<T: quote::ToTokens>(
         const #dummy_const: () = {
             #[allow(clippy::useless_attribute)]
             #[allow(rust_2018_idioms)]
-            extern crate num_traits as _num_traits;
+            //extern crate num_traits as _num_traits;
             #exp
         };
     }
